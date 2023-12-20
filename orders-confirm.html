@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.118.2">
-    <title>Cart</title>
+    <title>Order Confirm</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-fixed/">
 
@@ -21,8 +21,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
         <div class="container">
-            <a class="navbar-brand" href="/index.html">Swift Cart</a>
-
+            <a class="navbar-brand" href="#">Swift Cart</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -75,64 +74,60 @@
 
     <main class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <div class="card mb-3">
                     <div class="card-header">
-                        Cart
+                        Menu
                     </div>
-                    <div class="card-body">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Product</th>
-                                    <th class="text-center">Price</th>
-                                    <th class="text-center">Total</th>
-                                    <th class="text-center">Sub-Total</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <p><img src="http://placehold.co/50x50" alt=""><strong>Product Title</strong>
-                                        </p>
-                                    </td>
-                                    <td class="text-center">
-                                        Rp100.000
-                                    </td>
-                                    <td>
-                                        <form action="">
-                                            <div class="input-group">
-                                                <input type="number" class="form-control text-center" value="1">
-                                                <button class="btn-info btn" type="submit"><i
-                                                        class="fas fa-check"></i></button>
-                                            </div>
-                                        </form>
-                                    </td>
-                                    <td class="text-center">Rp100.000</td>
-                                    <td>
-                                        <form action="">
-                                            <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
-                                        </form>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="3"><strong>Total:</strong></td>
-                                    <td class="text-center"><strong>Rp100.000</strong></td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="card-footer">
-                        <a href="/checkout.html" class="btn btn-success float-end">Checkout <i
-                                class="fas fa-angle-right"></i></a>
-                        <a href="/index.html" class="btn btn-warning text-white"> <i class="fas fa-angle-left"></i>
-                            Back to Home</a>
+                    <div class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <a href="/profile.html">Profile</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/orders.html">Orders</a>
+                        </li>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="col-md-9">
+                <div class="card mb-3">
+                    <div class="card-header">
+                        Confirm Order #0123
+                        <div class="float-end">
+                            <span class="badge rounded-pill text-bg-info">Waiting</span>
+                        </div>
+                    </div>
+                    <form action="">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="">Transaction</label>
+                                <input type="text" class="form-control" value="12345" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="">From the account under the name of</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">The total amount in your shopping cart is</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Notes</label>
+                                <textarea name="description" id="" cols="30" rows="5" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Please upload the payment confirmation for your order in the shopping
+                                    cart.
+                                </label>
+                                <input type="image" name="image">
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-success">Confirm Payment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
     </main>
     <script src="./assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/libs/jquery/jquery-3.4.1.min.js"></script>
