@@ -78,8 +78,7 @@
             <div class="col-md-10 mx-auto">
                 <div class="card">
                     <div class="card-header">
-                        <span>Category</span>
-                        <a href="/admin-category-form.html" class="btn btn-sm btn-secondary">Add</a>
+                        <span>Order</span>
                         <div class="float-end">
                             <form action="">
                                 <div class="input-group">
@@ -99,47 +98,41 @@
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Title</th>
-                                    <th scope="col">Slug</th>
-                                    <th scope="col"></th>
+                                    <td>Number</td>
+                                    <td>Date</td>
+                                    <td>Total</td>
+                                    <td>Status</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>1</td>
-                                    <td>Laptops</td>
-                                    <td>laptops</td>
                                     <td>
-                                        <form action="#">
-                                            <a href="">
-                                                <button class="btn btn-sm">
-                                                    <i class="fas fa-edit text-info"></i>
-                                                </button>
-                                            </a>
-                                            <button class="btn btn-sm" type="submit"
-                                                onclick="return confirm('Are you sure?')">
-                                                <i class="fas fa-trash text-danger"></i>
-                                            </button>
-                                        </form>
+                                        <a href="/orders-details.html"><strong>#0132</strong></a>
+                                    </td>
+                                    <td>24 November 2024</td>
+                                    <td>Rp100.000</td>
+                                    <td>
+                                        <span class="badge rounded-pill text-bg-info">Waiting</span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
-                                    <td>Handphones</td>
-                                    <td>handphones</td>
                                     <td>
-                                        <form action="#">
-                                            <a href="">
-                                                <button class="btn btn-sm">
-                                                    <i class="fas fa-edit text-info"></i>
-                                                </button>
-                                            </a>
-                                            <button class="btn btn-sm" type="submit"
-                                                onclick="return confirm('Are you sure?')">
-                                                <i class="fas fa-trash text-danger"></i>
-                                            </button>
-                                        </form>
+                                        <a href="/orders-details.html"><strong>#05123</strong></a>
+                                    </td>
+                                    <td>24 November 2024</td>
+                                    <td>Rp100.000</td>
+                                    <td>
+                                        <span class="badge rounded-pill text-bg-success">Sent</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/orders-details.html"><strong>#0132</strong></a>
+                                    </td>
+                                    <td>24 November 2024</td>
+                                    <td>Rp100.000</td>
+                                    <td>
+                                        <span class="badge rounded-pill text-bg-danger">Canceled</span>
                                     </td>
                                 </tr>
                             </tbody>
